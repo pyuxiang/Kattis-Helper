@@ -3,7 +3,9 @@
 A couple of Python scripts to make life easy when practicing on Kattis.  
 Written for Windows and for C++ language (`g++` compiler must already be available).
 
-See the [Workflow](#workflow) section for usage.
+See the [Workflows](#workflows) section for usage.
+
+![](tools/demo.gif)
 
 ## Installation
 
@@ -79,6 +81,7 @@ Feel free to delete `LICENSE` and `README.md` for your own deployment (already i
 - `tools/.kattisrc` is the Kattis configuration file (ought to use this exclusively for
   login, etc., but I'm lazy)
 - `tools/.submit` is Kattis submission script with some personal touches listed on top
+- `tools/demo.gif` shows the demo on this page :)
 - `tools/kat.py` is the main script for everything
 - `tools/pwd.json` should store your Kattis account info in (dangerous) plaintext :O
 - `tools/template.cpp` provides the starting template
