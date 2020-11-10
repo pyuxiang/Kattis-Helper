@@ -33,18 +33,20 @@ pip install -r requirements.txt
 ```
 
 4. Add Kattis credentials:  
-   - Replace `tools/.kattisrc` with your own account's config file, from [here](https://open.kattis.com/download/kattisrc)
-   - Modify `tools/pwd.json` to include your login credentials (email + password)
+   - Replace `tools/.kattisrc` with your own account's config file from [here](https://open.kattis.com/download/kattisrc) (for `submit`)
+   - Modify `tools/pwd.json` to include your email/password login credentials (for `get` random + `record`)
 
 5. (Recommended) Install the additional dependencies:
-   - (Non-Windows) Add `wkhtmltopdf` binaries to `./tools` (Windows binary already supplied), allows printing of `.pdf` of the problem.
-   - (Non-Windows) Download Chrome and modify `FILE_CHROME` in `kat.py` to point to the correct directory containing `chrome.exe` (currently Windows default directory), allows direct opening of submission history after submitting.
+   - (Non-Windows) Add `wkhtmltopdf` binaries† to `./tools` for problem PDF printing.
+   - (Non-Windows) Modify `FILE_CHROME` in `kat.py` to directory‡ containing [`chrome.exe`](https://www.google.com/chrome/) for quick view of submission.
    - Modify `tools/template.cpp` to your liking (but keep `[[INPUT LINE]]` there).
 
 You're done setting up! For Windows users, a batch file `kat.bat` is provided for
 quick access to the scripts. Mac and Linux users, you gotta add your own `.sh`
 script extensions to replicate the same functionality.
 
+† Currently Windows `wkhtmltopdf` binary already provided in repo  
+‡ Currently Windows default Chrome installation directory by default
 
 ## Workflows
 
