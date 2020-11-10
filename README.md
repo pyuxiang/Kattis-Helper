@@ -26,15 +26,7 @@ python --version
 git clone https://github.com/pyuxiang/Kattis-Helper.git
 ```
 
-3. (Optional) Setup your virtual environment in the repository folder, and
-   activate the environment:
-
-```
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-3. Install required Python libraries (`--user` is fine too):
+3. Install required Python libraries (in venv, or with `--user` flag is fine too):
 
 ```
 pip install -r requirements.txt
@@ -57,7 +49,8 @@ script extensions to replicate the same functionality.
 ## Workflows
 
 Note that the `kat` is a batch file (i.e. for Windows command prompt).
-If using Powershell, use `.\kat`. If on Mac/Linux, write your own bash script ya.
+If using Powershell, use `.\kat`.  
+If on Mac/Linux, write your own bash script ya.
 
 - Download specific problems: `kat get shortestpath4 forestfruits`
 - Download random problem of specified difficulty: `kat get _medium`
