@@ -118,7 +118,10 @@ with open("tools/.kattisrc") as f:
             USERNAME = row.split("username: ")[-1]
             break
     else:
-        raise RuntimeError(".kattisrc file not found!")
+        raise RuntimeError("Faulty .kattisrc file!")
+
+if USERNAME == "pyuxiang":
+    raise RuntimeError("'.kattisrc' not updated with credentials - see README installation step 4.")
 
 
 
@@ -134,6 +137,8 @@ def _login():
         _ = json.load(f)
         account_email = _["Kattis"]["user"]
         account_password = _["Kattis"]["pass"]
+        if account_email == "ENTER YOUR EMAIL HERE":
+            raise RuntimeError("'pwd.json' not updated with credentials - see README installation step 4.")
         del _
 
     SESSION = requests.Session()
