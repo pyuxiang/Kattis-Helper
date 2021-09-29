@@ -1,0 +1,3 @@
+# .gitignore for ignoring auto-generated cache/bin files
+# To ignore modifications, use 'git update-index --skip-worktree [FILE]'
+# See: 'git help update-index'.
