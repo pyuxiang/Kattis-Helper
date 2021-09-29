@@ -1,3 +1,5 @@
 # .gitignore for ignoring auto-generated cache/bin files
-# To ignore modifications, use 'git update-index --skip-worktree [FILE]'
+# To ignore local modifications, use 'git update-index --skip-worktree [FILE]'
+#   - git update-index --skip-worktree tools/.kattisrc
+#   - git update-index --skip-worktree tools/pwd.json
 # See: 'git help update-index'.
